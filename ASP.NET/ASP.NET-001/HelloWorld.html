@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+hello world !<br />
+
+编写完成这个页面后<br />
+在IIS中添加网站，设置端口号，相应的应用池中修改.net版本<br />
+
+在浏览器中输入：http://127.0.0.1/HelloWorld.html   <br />
+或是：http://localhost:80/HelloWorld.html  <br />
+
+
+这里要注意一点就是我们是先安装vs后安装IIS,所以IIS中没有安装对动态网页ashx文件的处理程序<br />
+所以哦我们要在IIS中的->功能视图->处理程序映射->中添加对*.ashx文件的处理程序（.net frameWork）<br />
+怎么添加呢，在  Visual Studio 命令提示  窗口中输入 aspnet_regiis -i 回车即可
+
+
+</body>
+</html>
