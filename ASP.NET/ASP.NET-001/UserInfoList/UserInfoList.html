@@ -2,8 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function ()
+        {
+            $(".detele").click(function () 
+            {
+                if (!confirm ("确定删除吗")) //你想想，你点击取消，返回的是false，再取反是true，if语句成立，执行return false
+                {                             //你点击确定，返回true，再取反是false，if语句不成立，不执行代码，                       
+                    return false ;
+                }
+            }
+        });
+    
+    </script>
 </head>
 <body>
+    <!--
+你要明白html文件是模板，我们都要对齐配套一个ashx文件
+但是有时候却不需要，那就是当html文件中没有占位符（也就是要是用数据替换的东西）
+那么这时就没有必要在使用一个ashx文件了
+比如说我们要在一个html文件中只做一个表单，那没我们就不在需要一个ashx文件
+-->
     <table>
         <tr>
             <th>
@@ -16,11 +36,20 @@
                 密码
             </th>
             <th>
-               类型
+                类型
             </th>
-         
+            <th>
+                详细
+            </th>
+            <th>
+                删除
+            </th>
+            <th>
+                编辑
+            </th>
         </tr>
         @tbody
     </table>
+    <a href="AddUserInfo.html">添加新数据</a>
 </body>
 </html>
