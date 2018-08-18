@@ -1,0 +1,14 @@
+d:\documents\visual studio 2010\Projects\TreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.DAL.dll
+d:\documents\visual studio 2010\Projects\TreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.DAL.pdb
+d:\documents\visual studio 2010\Projects\TreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.Model.dll
+d:\documents\visual studio 2010\Projects\TreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.Model.pdb
+d:\documents\visual studio 2010\Projects\TreeLayersWeb\ThreeLayersWeb.DAL\obj\Debug\ThreeLayersWeb.DAL.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2010\Projects\TreeLayersWeb\ThreeLayersWeb.DAL\obj\Debug\ThreeLayersWeb.DAL.dll
+d:\documents\visual studio 2010\Projects\TreeLayersWeb\ThreeLayersWeb.DAL\obj\Debug\ThreeLayersWeb.DAL.pdb
+D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.DAL.dll
+D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.DAL.pdb
+D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.Model.dll
+D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.DAL\bin\Debug\ThreeLayersWeb.Model.pdb
+D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.DAL\obj\Debug\ThreeLayersWeb.DAL.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.DAL\obj\Debug\ThreeLayersWeb.DAL.dll
+D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.DAL\obj\Debug\ThreeLayersWeb.DAL.pdb
