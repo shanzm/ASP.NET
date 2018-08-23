@@ -61,7 +61,7 @@ namespace ThreeLayersWeb.DAL
         /// <returns>添加的数量</returns>
         public int AddManagerInfo(ManagerInfo managerInfo)
         {
-            string sql = "insert into ManagerInfo (MName,MPwd,MType) values(@MName,@MPwd,@MType)";
+            string sql = "insert into ManagerInfo(MName,MPwd,MType) values(@MName,@MPwd,@MType)";
             SqlParameter[] param ={
                                        new SqlParameter ("@MName",managerInfo.MName ),
                                        new SqlParameter ("@MPwd",managerInfo.MPwd ),

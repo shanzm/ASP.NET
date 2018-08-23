@@ -6,6 +6,8 @@
         window.onload=function ()
         {
             var validateCode = document.getElementById("validateCode");
+            //一旦点击“看不清？换一张”，就会重新将“看不清？换一张”的超链接再次指向ValidateImage.ashx，重新获取一张验证码，
+            // 为了防止有的浏览器会缓存，不重新生成，我们在ValidateImage.ashx连接后加了一个获取当前的毫秒，以形成新的链接
             validateCode.onclick = function ()
             {
                 document.getElementById("imgCode").src = "ValidateImage.ashx?d=" + new Date().getMilliseconds();
