@@ -71,6 +71,23 @@ namespace ThreeLayersWeb.DAL
 
         }
 
+        //返回查询结果的第一行第一个单元格的数据
+        public static object ExecuteScalar(string sql, CommandType type, params SqlParameter[] param)
+        {
+            using (SqlConnection conn=new SqlConnection (connStr ))
+            {
+                using (SqlCommand cmd=new SqlCommand (sql,conn))
+                {
+                    if (param !=null )
+                    {
+                        cmd.Parameters.AddRange(param);
+                    }
+                    cmd.CommandType = type ;
+                    conn.Open();
+                    return cmd.ExecuteScalar();
+                }
+            }
+        }
 
     }
 }

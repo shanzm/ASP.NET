@@ -55,6 +55,51 @@ namespace ThreeLayersWeb.DAL
 
 
         /// <summary>
+        /// 分页查询数据(取指定范围的数据)
+        /// </summary>
+        /// <param name="start">开始编号</param>
+        /// <param name="end">结束编号</param>
+        /// <returns>指定范围的数据</returns>
+        public List<ManagerInfo> GetPageList(int start, int end)
+        {
+            string sql = @"select * from
+                           (select * ,row_number() over(order by MId) as num from ManagerInfo) as T 
+                           where T.num between @start and @end";
+            SqlParameter[] param ={
+                                    new SqlParameter ("@start",start),
+                                    new  SqlParameter ("@end",end)
+                                  };
+            DataTable da = SqlHelper.GetDataTable(sql, CommandType.Text, param);
+
+
+            List<ManagerInfo> list = null;
+            if (da.Rows.Count > 0)
+            {
+                list = new List<ManagerInfo>();
+                ManagerInfo managerInfo = null;
+                foreach (DataRow row in da.Rows)
+                {
+                    managerInfo = new ManagerInfo();
+                    LoadEntity(managerInfo, row);//注意这里我们把循环中的对象实例化，给封装了一个方法LoadEntity()
+                    list.Add(managerInfo);
+                }
+            }
+            return list;
+
+        }
+
+
+        /// <summary>
+        /// 获取数据总记录数
+        /// </summary>
+        /// <returns></returns>
+        public int GetRecordCount()
+        {
+            string sql = "select count(*) from ManagerInfo";
+            return Convert .ToInt32 (SqlHelper .ExecuteScalar (sql,CommandType .Text ));
+        }
+
+        /// <summary>
         /// 添加用户信息
         /// </summary>
         /// <param name="managerInfo"></param>

@@ -51,9 +51,55 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CRUD\AddManagerInfo.html" />
+    <Content Include="CSS\pageBarStyle.css" />
     <Content Include="CSS\tableStyle.css" />
     <Content Include="Picture processing\FileUp.html" />
     <Content Include="Picture processing\Login.html" />
+    <Content Include="WebDemos\flash\main_fla.swf" />
+    <Content Include="WebDemos\flash\sub_fla.swf" />
+    <Content Include="WebDemos\Html\News.html" />
+    <Content Include="WebDemos\Html\Shownews.html" />
+    <Content Include="WebDemos\images\bg_a_list_prd_dt.png" />
+    <Content Include="WebDemos\images\bg_body.png" />
+    <Content Include="WebDemos\images\bg_body_column.png" />
+    <Content Include="WebDemos\images\bg_dotlightblue.gif" />
+    <Content Include="WebDemos\images\bg_footer_column.png" />
+    <Content Include="WebDemos\images\bg_header_Client.jpg" />
+    <Content Include="WebDemos\images\bg_header_company.jpg" />
+    <Content Include="WebDemos\images\bg_header_Contact.jpg" />
+    <Content Include="WebDemos\images\bg_header_Employment.jpg" />
+    <Content Include="WebDemos\images\bg_header_News.jpg" />
+    <Content Include="WebDemos\images\bg_header_Product.jpg" />
+    <Content Include="WebDemos\images\bg_header_Service.jpg" />
+    <Content Include="WebDemos\images\bg_main_column.gif" />
+    <Content Include="WebDemos\images\bg_position.png" />
+    <Content Include="WebDemos\images\bg_position_product.png" />
+    <Content Include="WebDemos\images\bg_title_column.png" />
+    <Content Include="WebDemos\images\bg_wrap_index.jpg" />
+    <Content Include="WebDemos\images\icon_dot_blue.png" />
+    <Content Include="WebDemos\images\icon_dot_gray.gif" />
+    <Content Include="WebDemos\images\icon_drgegray.png" />
+    <Content Include="WebDemos\images\img_contact_sidebarcolumn.png" />
+    <Content Include="WebDemos\images\img_copyright_column.png" />
+    <Content Include="WebDemos\images\img_copyright_index.png" />
+    <Content Include="WebDemos\images\img_prd_HousingSecurity.jpg" />
+    <Content Include="WebDemos\images\img_prd_MaintenanceFunds.jpg" />
+    <Content Include="WebDemos\images\img_prd_Mapping.jpg" />
+    <Content Include="WebDemos\images\img_prd_NewHouse.jpg" />
+    <Content Include="WebDemos\images\img_prd_Practitioners.jpg" />
+    <Content Include="WebDemos\images\img_prd_ProjectManagement.jpg" />
+    <Content Include="WebDemos\images\img_prd_Property.jpg" />
+    <Content Include="WebDemos\images\img_prd_Statistics.jpg" />
+    <Content Include="WebDemos\images\img_prd_StockHouse.jpg" />
+    <Content Include="WebDemos\images\img_prd_Transaction.jpg" />
+    <Content Include="WebDemos\images\logo.png" />
+    <Content Include="WebDemos\images\nav_column.png" />
+    <Content Include="WebDemos\images\nav_index.png" />
+    <Content Include="WebDemos\images\top-2.gif" />
+    <Content Include="WebDemos\NewsList.aspx" />
+    <Content Include="WebDemos\style\CommonStyle.css" />
+    <Content Include="WebDemos\style\pageStyle.css" />
+    <Content Include="WebDemos\style\style.css" />
     <Content Include="WebForm\AddManagerInfo3.aspx" />
     <Content Include="WebForm\EditManagerInfo.aspx" />
     <Content Include="WebForm\ManagerInfoList2.aspx" />
@@ -86,6 +132,13 @@
     </Compile>
     <Compile Include="Picture processing\GDI.ashx.cs">
       <DependentUpon>GDI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebDemos\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebDemos\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm\AddManagerInfo3.aspx.cs">
       <DependentUpon>AddManagerInfo3.aspx</DependentUpon>
@@ -178,6 +231,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Picture processing\ValidateImage.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WebDemos\images\vssver2.scc" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
