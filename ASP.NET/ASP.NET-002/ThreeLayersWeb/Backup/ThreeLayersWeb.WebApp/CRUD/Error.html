@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+ <!--   <meta http-equiv=refresh content="5;url=ManagerInfoList.ashx">-->
+    <script type="text/javascript" >
+        window.onload = function ()
+        {
+            setTimeout(change, 1000); //setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。 
+        }
+        function change()
+        {
+            var time = document.getElementById("time").innerHTML;
+            time = parseInt(time);
+            time--;
+            if (time<1)
+            {
+                window.location.href = "ManagerInfoList.ashx";
+            }
+            else
+            {
+                document.getElementById("time").innerHTML = time;
+                setTimeout(change, 1000);//隔一秒钟就调用一次change函数
+            }
+        }
+    </script>
+</head>
+<body style ="text-align:center">
+    服务器忙碌中。。。<br />
+  <span style="font-size:20px;color:Red" id="time">5</span> 秒钟之后自动跳转的<a href="ManagerInfoList.ashx" >首页</a>
+
+</body>
+</html>

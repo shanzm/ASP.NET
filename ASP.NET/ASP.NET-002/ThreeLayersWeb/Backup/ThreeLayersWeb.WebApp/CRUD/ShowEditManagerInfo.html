@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>修改用户信息</title>
+</head>
+<body>
+    <form method="post" action="EditManagerInfo.ashx"> <!--再次强调啊，在表单中的submit按钮点击之后，数据就会提交到action所指向的页面-->
+    用户名：<input type="text" name="txtName" value="$MName" /><br />
+    密码：<input type="text" name="txtPwd" value="$MPwd" /><br />
+    类型：<input type="text" name="txtType" value="$MType" /><br />
+    <input type="hidden" name="txtId" value="$id" /><!--注意这个隐藏域是为了把id的值传输到EditUser.ashx-->
+    <input type="submit" value="修改用户信息" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload=function ()
+        {
+            var validateCode = document.getElementById("validateCode");
+            //一旦点击“看不清？换一张”，就会重新将“看不清？换一张”的超链接再次指向ValidateImage.ashx，重新获取一张验证码，
+            // 为了防止有的浏览器会缓存，不重新生成，我们在ValidateImage.ashx连接后加了一个获取当前的毫秒，以形成新的链接
+            validateCode.onclick = function ()
+            {
+                document.getElementById("imgCode").src = "ValidateImage.ashx?d=" + new Date().getMilliseconds();
+            }
+
+        };
+    
+    </script>
+</head>
+<body>
+    <form method="post" action="Login.ashx">
+    用户名：<input type="text" name="txtName" /><br />
+    密码：<input type="password" name="txtPwd" /><br />
+    验证码：<input type="text" name="txtValidate" /><img src="ValidateImage.ashx" id="imgCode" /><a
+        href="javascript:void(0)" id="validateCode">看不清？换一张</a><br />
+    <input type="submit" value="登录" />
+    </form>
+</body>
+</html>
