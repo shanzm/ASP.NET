@@ -22,3 +22,17 @@ D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.WebApp\bi
 D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.DAL.pdb
 D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.WebApp\obj\Debug\ThreeLayersWeb.WebApp.dll
 D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.WebApp\obj\Debug\ThreeLayersWeb.WebApp.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.WebApp.dll.config
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.WebApp.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.WebApp.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.Common.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.Model.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayerWeb.Bll.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.DAL.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.Common.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.Model.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayerWeb.Bll.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\bin\ThreeLayersWeb.DAL.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\obj\Debug\ThreeLayersWeb.WebApp.csprojResolveAssemblyReference.cache
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\obj\Debug\ThreeLayersWeb.WebApp.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.WebApp\obj\Debug\ThreeLayersWeb.WebApp.pdb

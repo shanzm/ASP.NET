@@ -6,3 +6,8 @@ D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.Model\bin
 D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.Model\bin\Debug\ThreeLayersWeb.Model.pdb
 D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.Model\obj\Debug\ThreeLayersWeb.Model.dll
 D:\Documents\Visual Studio 2010\Projects\ThreeLayersWeb\ThreeLayersWeb.Model\obj\Debug\ThreeLayersWeb.Model.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.Model\bin\Debug\ThreeLayersWeb.Model.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.Model\bin\Debug\ThreeLayersWeb.Model.pdb
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.Model\obj\Debug\ThreeLayersWeb.Model.csprojResolveAssemblyReference.cache
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.Model\obj\Debug\ThreeLayersWeb.Model.dll
+F:\ForGit\ASP.NET\ASP.NET\ASP.NET-002\ThreeLayersWeb\ThreeLayersWeb.Model\obj\Debug\ThreeLayersWeb.Model.pdb
