@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--这就是一个模版页面，我们在ashx页面读取这个页面之后
+在使用replace替换占位符-->
+<head>
+    <title></title>
+    <style type="text/css" >
+        .txt
+        {
+            font-size :14px;
+            color:blue;
+           
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <table  border ="1px">
+        <tr>
+            <td>
+                用户名
+            </td>
+            <td class="txt">
+                $name
+            </td>
+        </tr>
+        <tr>
+            <td >
+                密码
+            </td>
+            <td class ="txt">
+                $password
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

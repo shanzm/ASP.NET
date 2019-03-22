@@ -4,37 +4,46 @@
     <title></title>
 </head>
 <body>
-<!--这是html模板-->
+    <!--这是html模板-->
+    <!--get
+    注意这里是使用Get的请求方式，由浏览器使用get的方式请求服务器，服务器中的IIS将ashx文件给.net Framework解析得到结果又返回到IIS，最后IIs在将结果返回浏览器
+    如果表单是以GET方式将数据发送到服务器，那么将会将用户在表单中输入的数据放在浏览器的地址栏中url发送到AddInfo.ashx页面-->
+    <!--格式：以表单元素name属性的值=用户输入的值&以表单元素name属性的值=用户输入的值
+    例如：http://localhost:17364/ASP.NET/Add-form/AddInfo.ashx?txtName=shanzm&txtPwd=123456 -->
+    <!--post
+    注意使用post的请求方式，则表单中输入的的信息是放在请求体中的请求报文中
+    格式：txtName=shanzm&txtPwd=12345
+    -->
+    <!--区别
+    注意一般情况下我们都是使用post的请求方式，但是也有特殊情况
+    在搜索的时候，我们的表单是使用get的方式提交
+    因为你搜素的东西之后的链接你想要保存，之后点开依然可以使用，所以有益于网站的推广
+    你可以在网上随便找一个搜索框，你发现一旦在你输入后点击提交按钮后，你的搜索内容是在浏览器的地址栏中的
+
+    注意在地址栏中输入地址后，点击enter（回车键），是get请求
+    点击超链接也是get请求
+
+    post只有在表单提交将get改为post时使用
+    -->
 
 
-<!--get
-注意这里是使用Get的请求方式，由浏览器使用get的方式请求服务器，服务器中的IIS将ashx文件给.net Framework解析得到结果又返回到IIS，最后IIs在将结果返回浏览器
-如果表单是以GET方式将数据发送到服务器，那么将会将用户在表单中输入的数据放在浏览器的地址栏中url发送到AddInfo.ashx页面-->
-<!--格式：以表单元素name属性的值=用户输入的值&以表单元素name属性的值=用户输入的值
-例如：http://localhost:17364/ASP.NET/Add-form/AddInfo.ashx?txtName=shanzm&txtPwd=123456 -->
+    <form method="post"  action="AddInfo.ashx">
+        用户名:<input type="text" name="txtName" /><br />
+        密码:<input type="password" name="txtPwd" /><br />
+        <input type="submit" value="提交" />
+        <input type="checkbox" name="isVip" />
+        <textarea name="msg"></textarea>
 
-<!--post
-注意使用post的请求方式，则表单中输入的的信息是放在请求体中的请求报文中
-格式：txtName=shanzm&txtPwd=12345
--->
+        <select name="pro">
+            <option value="bj">北京</option>
+            <option value="sh">上海</option>
+        </select>
 
-<!--区别
-注意一般情况下我们都是使用post的请求方式，但是也有特殊情况
-在搜索的时候，我们的表单是使用get的方式提交
-因为你搜素的东西之后的链接你想要保存，之后点开依然可以使用，所以有益于网站的推广 
-你可以在网上随便找一个搜索框，你发现一旦在你输入后点击提交按钮后，你的搜索内容是在浏览器的地址栏中的
 
-注意在地址栏中输入地址后，点击enter（回车键），是get请求
-点击超链接也是get请求
-
-post只有在表单提交将get改为post时使用
--->
-
- 
-    <form method="post" action="AddInfo.ashx">
-    用户名:<input type="text" name="txtName" /><br />
-    密码:<input type="password" name="txtPwd" /><br />
-    <input type="submit" value="提交" />
+        <ul>
+            <li><input type="radio" name="gender" value="male" />男</li>
+            <li><input type="radio" name="gender" vlaue="female"/>女</li>
+        </ul>
     </form>
 </body>
 </html>
