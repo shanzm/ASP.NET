@@ -4,7 +4,48 @@
     <title></title>
 </head>
 <body>
-  <p>$Person.Name</p>
+    <!--输出对象属性-->
+    <p>$Person.Name</p>
     <p>$Person.Age</p>
+
+    <!--索引字典的值-->
+    <p>$Dictionary.a</p>注意是使用：“.”而不是Dictionary["a"]
+
+    <!--遍历数组-->
+    <ul>
+        #foreach($item in $Array)
+        <li>$item</li>
+        #end
+    </ul>
+
+    <!--遍历集合-->
+    <ul>
+        #foreach($item int $List)
+        <li>$item.Name的年龄是$item.Age</li>
+        #end
+    </ul>
+
+
+    <!--if条件判断-->
+    <p>
+        #if($Person.Age>18)
+        你好，成年人！
+        #else
+        你好，未成年人！
+        #end
+    </p>
+
+    <!--遍历集合&使用条件判断-->
+    <ul>
+        #foreach($item in $List)
+          #if($item.Age>18)
+          <li style="color:green ">$item.Name的年龄是$item.Age</li>
+          #else
+          <li style="color:red">$item.Name的年龄是$item.Age</li>
+          #end
+        #end
+    </ul>
+
+
 </body>
 </html>
