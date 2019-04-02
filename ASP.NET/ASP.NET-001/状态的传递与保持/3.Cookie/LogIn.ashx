@@ -1,9 +1,9 @@
-﻿<%@ WebHandler Language="C#" Class="LoginIn" %>
+﻿<%@ WebHandler Language="C#" Class="LogIn" %>
 
 using System;
 using System.Web;
 
-public class LoginIn : IHttpHandler
+public class LogIn : IHttpHandler
 {
 
     public void ProcessRequest(HttpContext context)
