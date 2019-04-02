@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <!--因为http协议的无记忆性，我们在html页面设立一个隐藏域，当向服务器请求的时候我们带着数据去，服务器端对数据修改后在放到给html
+    有一个很有意思的比喻：浏览器好像时病人，医生是服务器，医生不可能记住病人上次来的检查结果，所以病人要自己带着病例，医生就诊之后就要重新写病例。这里的病例就是html里用来存储数据的隐藏域-->
+
+    <form method ="post" action ="selfAddInfo.ashx">
+    <input type="hidden" name="record" value="$num" />
+    <span>$num</span>
+    <input type ="submit" value="提交" />
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <!--注意一个表单的所有提交的数据都会被传递到服务端（不管你在ashx页面接不接收），除了<input type="submit" />,按钮的value只有你点击这个按钮才会被提交-->
+    <form action="CookieTest.ashx" method="post">
+        <input type="submit" name="write" value="写入Cookie" />
+        <input type="submit" name="read" value="读取Cookie" />
+    </form>
+    <p>读出来的Cookie：$Data.Value</p>
+    <p>注意：写入的时候：可以在浏览器调试工具中查看报文：Response Headers-->Set-Cookie</p>
+    <p>注意：读取的时候：可以在浏览器调试工具中查看报文：Request Headers--->Cookie</p>
+
+
+
+    <p>注意这里我TM才发现新建网站和新建项目的区别了，
+   在这我们是新建网站，是没有命名空间的，我们是在ashx文件上写的C#代码
+    而新建项目则是在ashx.cs上面写C#代码，是有命名空间的
+    
+    在这里没有命名空间，我们新建的类是自动放在App_Code文件夹的
+    这里我们封装的NVelocityHelper.cs 是放在App_Code中的
+    而且你要注意NVelocityHelper.cs模板路径的写法和我们在yzk-CURED项目中写法也是不一样的
+    </p>
+</body>
+</html>
